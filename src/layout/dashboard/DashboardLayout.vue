@@ -7,6 +7,8 @@
         <sidebar-link to="/inventory/add" name="Inventory Add" icon="ti-plus"/>
         <sidebar-link to="/slot/add" name="Jobs & Repairs" icon="ti-vector"/>
         <sidebar-link to="/jobs/list" name="Jobs & Repairs List" icon="ti-agenda"/>
+        <sidebar-link to="/user/profile" name="Profile" icon="ti-user"/>
+        <sidebar-link to="/notifications" name="Settings" icon="ti-settings"/>
 <!--        <sidebar-link to="/table-list" name="Table List" icon="ti-view-list-alt"/>-->
 <!--        <sidebar-link to="/typography" name="Typography" icon="ti-text"/>-->
 <!--        <sidebar-link to="/icons" name="Icons" icon="ti-pencil-alt2"/>-->

@@ -23,24 +23,24 @@
     <div class="row">
 
       <div class="col-12">
-        <chart-card title="Users behavior"
-                    sub-title="24 Hours performance"
-                    :chart-data="usersChart.data"
-                    :chart-options="usersChart.options">
-          <span slot="footer">
-            <i class="ti-reload"></i> Updated 3 minutes ago
-          </span>
-          <div slot="legend">
-            <i class="fa fa-circle text-info"></i> Open
-            <i class="fa fa-circle text-danger"></i> Click
-            <i class="fa fa-circle text-warning"></i> Click Second Time
-          </div>
-        </chart-card>
+<!--        <chart-card title="Users behavior"-->
+<!--                    sub-title="24 Hours performance"-->
+<!--                    :chart-data="usersChart.data"-->
+<!--                    :chart-options="usersChart.options">-->
+<!--          <span slot="footer">-->
+<!--            <i class="ti-reload"></i> Updated 3 minutes ago-->
+<!--          </span>-->
+<!--          <div slot="legend">-->
+<!--            <i class="fa fa-circle text-info"></i> Open-->
+<!--            <i class="fa fa-circle text-danger"></i> Click-->
+<!--            <i class="fa fa-circle text-warning"></i> Click Second Time-->
+<!--          </div>-->
+<!--        </chart-card>-->
       </div>
 
       <div class="col-md-6 col-12">
-        <chart-card title="Email Statistics"
-                    sub-title="Last campaign performance"
+        <chart-card title="Jobs Statistics"
+                    sub-title="Performance"
                     :chart-data="preferencesChart.data"
                     chart-type="Pie">
           <span slot="footer">
@@ -89,8 +89,8 @@ export default {
         {
           type: "warning",
           icon: "ti-server",
-          title: "Capacity",
-          value: "105GB",
+          title: "Parts in stock",
+          value: "0",
           footerText: "Updated now",
           footerIcon: "ti-reload"
         },
@@ -98,23 +98,23 @@ export default {
           type: "success",
           icon: "ti-wallet",
           title: "Revenue",
-          value: "$1,345",
-          footerText: "Last day",
-          footerIcon: "ti-calendar"
+          value: "KES. 0",
+          footerText: "",
+          footerIcon: "ti-money"
         },
         {
           type: "danger",
           icon: "ti-pulse",
-          title: "Errors",
-          value: "23",
-          footerText: "In the last hour",
+          title: "Sales",
+          value: "0",
+          footerText: "",
           footerIcon: "ti-timer"
         },
         {
           type: "info",
-          icon: "ti-twitter-alt",
-          title: "Followers",
-          value: "+45",
+          icon: "ti-flickr",
+          title: "Active Jobs",
+          value: "0",
           footerText: "Updated now",
           footerIcon: "ti-reload"
         }

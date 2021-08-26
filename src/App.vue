@@ -8,10 +8,12 @@
 <script>
 export default {
   created () {
-    this.$http.interceptors.response.use(undefined, function (err) {
+    this.$http.interceptors.response.use(undefined, (err) => {
       return new Promise(function (resolve, reject) {
-        if (err.status === 401 && err.config && !err.config.__isRetryRequest) {
-          this.$store.dispatch(logout)
+        // console.log(this.$store.dispatch("logout"))
+        if (err.request.status === 401 && err.config && !err.config.__isRetryRequest) {
+          this.$store.dispatch('logout')
+          this.$router.push('/login')
         }
         throw err;
       });

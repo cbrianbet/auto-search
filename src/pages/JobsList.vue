@@ -40,7 +40,7 @@ export default {
   data() {
     const todos = [
       {
-        description: 'Take Noah to basketball practice.',
+        description: 'Service finished',
         isComplete: false,
         dates: {weekdays: 6}, // Every Friday
         color: 'red',

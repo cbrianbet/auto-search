@@ -4,11 +4,11 @@
       <ul class="list-unstyled team-members">
         <li>
           <div class="row" v-for="member in members" :key="member.name">
-            <div class="col-3">
-              <div class="avatar">
-                <img :src="member.image" alt="Circle Image" class="rounded img-fluid">
-              </div>
-            </div>
+<!--            <div class="col-3">-->
+<!--              <div class="avatar">-->
+<!--                <img :src="member.image" alt="Circle Image" class="rounded img-fluid">-->
+<!--              </div>-->
+<!--            </div>-->
             <div class="col-6">
               {{member.name}}
               <br>
@@ -32,7 +32,7 @@
 export default {
   data() {
     return {
-      title: "Team members",
+      title: "My Cars",
       members: [
         {
           image: require("@/assets/img/faces/face-0.jpg"),
